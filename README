@@ -1,9 +1,9 @@
 1. mkdir somename #创建工作目录
-2. cd somename && git init #Init 目录
+2. cd somename && git init #Init 目录,生成.init目录即本地仓库
 3. vi xx.file # 创建编辑文件
-4. git add * # 把该目录下的文件 或者修改过的文件 添加到index缓存区
-5. git commit -m "anntation of this modify of file" #记录该目录下的文件的修改
+4. git add * # 把该目录下的文件 或者修改过的文件 添加到.init本地仓库的index缓存区
+5. git commit -m "anntation of this modify of file"  #记录该目录下的文件的修改到本地仓库.init
 6. git remote add git_usage_or_some https://github.com/orangeSi/somename.git #在github上创建仓库命名为somename，然后执行remote来把该仓库添加到git_usage_or_some,做这个名字和somename都是唯一的，这样才能通过git_usage_or_some找到somename这个仓库
 7. git push git_usage_or_some master #把commit 记录的改变的文件推送到远端仓库git_usage_or_some，即somename.git
 8. ~~~每次修改文件都要对应的文件add + commit + push才能把修改后的推送到远端仓库~~~
-9. 
+9. .git目录记录了index缓存区和commit的修改记录和远端仓库的地址和名字
