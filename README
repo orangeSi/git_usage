@@ -1,0 +1,9 @@
+1. mkdir somename #创建工作目录
+2. cd somename && git init #Init 目录
+3. vi xx.file # 创建编辑文件
+4. git add * # 把该目录下的文件 或者修改过的文件 添加到index缓存区
+5. git commit -m "anntation of this modify of file" #记录该目录下的文件的修改
+6. git remote add origin https://github.com/orangeSi/somename.git #创建远端仓库
+7. git push origin master #把commit 记录的改变的文件推送到远端仓库
+8. 每次修改文件都要add + commit + push才能把修改后的推送到远端仓库
+
