@@ -9,3 +9,4 @@
 7. git_usage_or_some 和master都可以用tab补全~
 8. ~~~每次修改文件都要对应的文件add + commit + push才能把本地修改后的推送到远端仓库~~~
 9. .git目录记录了index缓存区和commit的修改记录和远端仓库的地址和名字
+10. git config --global credential.helper 'cache --timeout=3600'  #延长再次输入密码的时间，这样就不用每次push都要输入账号密码了
