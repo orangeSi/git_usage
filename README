@@ -5,7 +5,10 @@
 4. git add * # 把该目录下的文件 或者修改过的文件 添加到.init本地仓库的index缓存区
 5. git commit -m "anntation of this modify of file"  #记录该目录下的文件的修改到本地仓库.init
 6. git remote add git_usage_or_some https://github.com/orangeSi/somename.git #在github上创建仓库命名为somename，然后执行remote来把该仓库添加到git_usage_or_some,做这个名字和somename都是唯一的，这样才能通过git_usage_or_some找到somename这个仓库
-6. git_usage_or_some 是本地仓库的名字，somename是github上云端仓库的名字，通过remote add 把两者联系alias在一起
+6. git_usage_or_some 是本地仓库的名字也是远端仓库的别名，somename是github上云端仓库的名字，通过remote add 把两者联系alias在一起
+
+6. 如果远端仓库改了文件，本地仓库在push的时候，首先得git pull git_usage_or_name master把远端仓库的master分支下的下载下来，然后在push
+
 7. git push git_usage_or_some master #把commit 本地仓库git_usage_or_some_name 中记录的改变的文件推送到云端仓库somename.git
 7. git_usage_or_some 和master都可以用tab补全~
 8. ~~~每次修改文件都要对应的文件add + commit + push才能把本地修改后的推送到远端仓库~~~
